@@ -42,8 +42,6 @@ export default function Upload() {
             setError("An error occurred while uploading");
         }
     };
-
-    // ✅ Handle result safely
     useEffect(() => {
         if (!result) return;
 
@@ -54,7 +52,6 @@ export default function Upload() {
         }
     }, [result]);
 
-    // ✅ Navigation
     if (next) return <Result data={result} />;
     if (back) return <Front />;
 
