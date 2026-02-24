@@ -1,0 +1,62 @@
+/* Full Page Layout */
+.front {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading Section */
+.heading {
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Main Title */
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Button Container */
+.image-container {
+    margin-top: 20px;
+}
+
+/* Scan Button */
+.upload-button {
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background: white;
+    color: #1e3c72;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.upload-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Click Effect */
+.upload-button:active {
+    transform: scale(0.98);
+}
