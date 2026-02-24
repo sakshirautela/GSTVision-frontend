@@ -12,8 +12,6 @@ export default function Result({ data }) {
 
     const gst_api = process.env.REACT_APP_GST_APP_API_URL || "";
     const api = process.env.REACT_APP_API_URL || "http://localhost:8080";
-
-    // ✅ ALL HOOKS MUST BE HERE FIRST
     useEffect(() => {
 
         const validateGST = async () => {
@@ -71,7 +69,6 @@ export default function Result({ data }) {
     }, [valid, api, data]);
 
 
-    // ✅ CONDITIONAL RETURNS AFTER HOOKS
     if (home) return <Front />;
     if (anotherScan) return <Upload />;
 
